@@ -1,0 +1,248 @@
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #01020C;
+    height: 100%;
+    margin-top: 78px;
+}
+
+header img {
+    width: 130px;
+    height: auto;
+}
+
+main>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    height: 100%;
+    margin: 16px 0;
+}
+
+/* .cost */
+.cost-wrap {
+    max-width: 398px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.cost-text-up {
+    display: flex;
+}
+
+.cost-text-up div {
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    margin-left: 9px;
+}
+
+.cost-text-up>p {
+    font-size: 25px;
+}
+
+.cost-text-up div p {
+    font-size: 30px;
+    margin-top: -4px;
+}
+
+.cost-text-up div span {
+    font-size: 15px;
+}
+
+.cost-text-down {
+    font-size: 14px;
+    color: #737374;
+}
+
+
+/* カード情報の入力エリア */
+.checkout-info-wrap {
+    background-color: #fff;
+    max-width: 398px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-area-wrap {
+    margin-top: 28px;
+}
+
+.input-area-wrap>div:nth-child(n+2) {
+    margin-top: 12px;
+}
+
+/* メインのinputタグの装飾 */
+.input-long-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-size: 14px;
+}
+
+.input-label span {
+    color: #FD0000;
+    margin-left: 6px;
+}
+
+input {
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #C7C7C7;
+    transition: border-color 0.3s;
+    margin-top: 5px;
+    padding-left: 16px;
+}
+
+input::placeholder {
+    color: #C7C7C7;
+}
+
+
+/* selectorエリアの装飾 */
+select {
+    width: 49%;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #C7C7C7;
+    margin-top: 5px;
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+
+/* 購入商品情報 */
+.purchase-product-info-wrap {
+    background-color: #fff;
+    max-width: 398px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.product-wrap {
+    margin-top: 28px;
+}
+
+.product-title {
+    font-weight: bold;
+}
+
+.product-menu {
+    display: flex;
+    color: #673AD3;
+    font-size: 10px;
+}
+
+.product-menu {
+    display: flex;
+    color: #673AD3;
+    font-size: 10px;
+}
+
+.product-menu p:nth-child(n+2) {
+    margin-left: 24px;
+}
+
+.product-value {
+    display: flex;
+    font-size: 24px;
+    margin-top: 6px;
+}
+
+.product-value p {
+    margin-top: -3px;
+}
+
+.product-value span {
+    font-size: 12px;
+
+}
+
+.product:nth-last-child(n+2) {
+    border-bottom: 1px solid #D0D0D0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* Button area */
+.button {
+    max-width: 398px;
+    width: 100%;
+}
+
+.currect-button {
+    background-color: #4A14CA;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    transition: backgroundo-color 0.3s ease, transform 0.1s ease;
+}
+
+.currect-button:active {
+    background-color: #673AD3;
+    transform: scale(0.99);
+
+}
+
+.button p {
+    color: #C7C7C7;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+
+/* ブランドロゴ */
+.card-brands {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.brand-logo {
+    height: 30px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.brand-logo.active {
+    opacity: 1;
+}
+
+.card-error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+input.currect-button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}

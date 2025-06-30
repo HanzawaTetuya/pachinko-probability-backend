@@ -1,0 +1,91 @@
+#main-content {
+    padding: 30px 50px 70px 50px ;
+}
+
+#main-content .title {
+    margin-bottom: 30px;
+}
+
+.user-info-section-wrap {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #e0e0e0;
+}
+
+.user-info-section {
+    padding: 60px 25px;
+}
+
+.container-header {
+    font-size: 15px;
+    margin: 0 auto 50px;
+}
+
+.container-header p:nth-child(2) {
+    margin: 0 0 16px 0;
+    font-weight: bold;
+    border-bottom:1px solid #333;
+}
+
+
+.name-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.name-header label {
+    font-weight: bold;
+    color: #333;
+}
+
+.name-input-wrapper {
+    position: relative;
+}
+
+.name-input {
+    width: 100%;
+    padding: 0 42px 0 13px;
+    margin-bottom: 40px;
+    height: 33px;
+    border-radius: 5px;
+    border: 1px solid #E1E1E1;
+    padding-right: 35px; /* アイコンのスペースを確保 */
+    transition: border-color 0.3s ease; /* ボーダー色の変化をスムーズに */
+}
+
+.name-input:focus {
+    border-color: #9B9B9B; /* フォーカス時のボーダー色 */
+}
+
+.toggle-visibility {
+    position: absolute;
+    top: 20%;
+    right: 13px;
+    cursor: pointer;
+}
+
+.toggle-visibility img {
+    width: 20px;
+}
+
+
+/* login-button */
+.login-button {
+    background-color: #F0C808;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 15px -5px #777777;
+    transition: all 0.5s ease;
+}
+.login-button:hover {
+    background-color: #FFAA00;
+    box-shadow: none;
+}

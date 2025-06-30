@@ -1,0 +1,160 @@
+/* メインコンテンツのスタイル */
+#main-content {
+    padding: 30px 50px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 売上エリア */
+.profit-content-wrap {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 137px;
+}
+
+/* 統一プロパティ */
+.profit-wrap {
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    padding: 24px 16px;
+    min-width: 586px;
+    max-width: 100%;
+    color: #7B7B7B;
+}
+
+.profit-title {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.profit {
+    display: flex;
+    gap: 35px;
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.profit div {
+    display: flex;
+    align-items: end;
+}
+
+.number {
+    margin-bottom: -1px;
+}
+
+.font-size-20 {
+    font-size: 22px;
+}
+
+.font-size-14 {
+    font-size: 20px;
+}
+
+.line {
+    font-size: 30px;
+    font-weight: 100;
+    margin-inline: 6px;
+    margin-top: -5px;
+}
+
+/* 提携先一覧 */
+.partner-companies-wrap {
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    max-width: 1550px;
+}
+
+.p-c-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 8px 26px;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.p-c-title p {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.companies-add-btn {
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1.58px solid #4C83EE;
+    color: #4C83EE;
+}
+
+/* テーブルのレイアウト */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+td > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+thead {
+    background-color: #fff;
+}
+
+tbody {
+    display: block;
+    background-color: #F8FAFA;
+    max-height: 380px;
+    overflow: auto;
+}
+
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    /* テーブルの列幅が一定に保たれるように */
+}
+
+tr {
+    height: 62px;
+}
+
+th {
+    font-weight: bold;
+}
+
+
+/* ボタンのスタイル */
+.detail-btn {
+    background-color: #F0C808;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #FFAA00;
+}

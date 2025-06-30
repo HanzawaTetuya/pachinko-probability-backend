@@ -1,0 +1,76 @@
+/* メインコンテンツのスタイル */
+#main-content {
+    padding: 30px 50px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* フォームセクションのスタイル */
+.form-section-wrap {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    /* margin: 0 auto; */
+    padding: 60px 25px;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #e0e0e0;
+}
+
+
+.form-group-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+
+.form-group-wrap label {
+    flex: 1;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.form-group-wrap .form-input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.important-text {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+
+/* 確認ボタンのスタイル */
+.submit-btn {
+    background-color: #F0C808;
+    border: none;
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #FFAA00;
+}

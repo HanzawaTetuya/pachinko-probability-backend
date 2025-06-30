@@ -1,0 +1,212 @@
+/* メインコンテンツのスタイル */
+#main-content {
+    padding: 30px 50px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* ユーザー情報セクションのスタイル */
+.user-info-section-wrap {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 957px;
+    padding: 60px 25px;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #e0e0e0;
+}
+
+.user-info-group-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.user-info-group-wrap .user-info-group:nth-child(1) {
+    margin-right: 10px;
+}
+
+.user-info-group {
+    width: 48%;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.user-info-group label {
+    flex: 1;
+    font-weight: bold;
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 21px;
+}
+
+.user-info-group p {
+    margin-top: 21px;
+    font-size: 13px;
+    margin-bottom: 12px;
+    margin: 21px 0 12px 16px;
+}
+
+.user-info-group .span {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea.user-info-input {
+    height: 100px;
+    resize: none; /* テキストエリアのサイズ調整を無効にする */
+}
+
+.user-info-group-textarea {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+/* 公開設定トグル */
+.switch-group {
+    justify-content: flex-start;
+    margin-bottom: 70px;
+}
+
+.toggle_input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.toggle_label {
+    width: 70px;
+    height: 35px;
+    background: #fff;
+    border: 3px solid #eee;
+    position: relative;
+    display: inline-block;
+    border-radius: 40px;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.toggle_label:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    left: 2px;
+    top: 2.5px;
+    z-index: 2;
+    background: #eee;
+    transition: 0.4s;
+}
+
+.toggle_input:checked+.toggle_label {
+    border: 3px solid #398B66;
+}
+
+.toggle_input:checked+.toggle_label:after {
+    left: 38px;
+    background: #398B66;
+}
+
+.toggle_button {
+    position: relative;
+    width: 85px;
+    height: 42px;
+}
+
+/* テーブルコンテナ */
+.purchase-info-container {
+    width: 100%;
+    max-width: 465px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.purchase-info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.purchase-info-table thead {
+    background-color: #2b2b2b;
+    color: #fff;
+    text-align: left;
+}
+
+.purchase-info-table th,
+.purchase-info-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.purchase-info-table tbody {
+    max-height: 237px; /* テーブルの高さ制限 */
+    overflow-y: auto; /* 縦スクロール */
+    display: block;
+}
+
+.purchase-info-table tbody tr {
+    background-color: #fff;
+}
+
+.purchase-info-table thead,
+.purchase-info-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.purchase-info-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* ボタンのスタイル */
+.edit-user-btn,
+.back-btn {
+    background-color: #fff;
+    border: 1px solid #4C83EE;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #4C83EE;
+    cursor: pointer;
+    margin-left: 16px;
+    transition: 0.2s ease-in-out;
+    width: 150px;
+    height: 40px;
+}
+
+.edit-user-btn:hover,
+.back-btn:hover {
+    background-color: #4C83EE;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.edit-user-btn:active,
+.back-btn:active {
+    background-color: #124BBA;
+}
+
+.user-info-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 20px;
+}
+
+.user-info-btn {
+    border-bottom: none;
+}

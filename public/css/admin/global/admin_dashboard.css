@@ -1,0 +1,310 @@
+/* admin_dashboard.css */
+
+/* 全体のスタイル */
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    /* aタグをブロック要素に設定 */
+    width: 100%;
+    /* 親要素の幅に合わせる */
+    height: 100%;
+    /* 親要素の高さに合わせる */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* 背景色とテキスト色のアニメーション */
+}
+
+a:visited {
+    color: #1c1c1c;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    width: fit-content;
+}
+
+/* サイドバーのスタイル */
+#sidebar {
+    width: 237px;
+    background-color: #1D283E;
+    color: #D0D0D0;
+    position: fixed;
+    font-size: 16px;
+    font-weight: 900;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+#sidebar a {
+    color: #D0D0D0;
+}
+
+.logo-area {
+    padding: 25px 35px;
+}
+
+.logo-area img {
+    width: 167px;
+}
+
+.nav-container {
+    padding: 0;
+    margin: 0;
+}
+
+.no-submenu,
+.has-submenu {
+    padding: 0;
+    /* aタグにパディングを設定するため、ここでは0に */
+    border-top: 1px solid #404D68;
+    border-bottom: 1px solid #404D68;
+    cursor: pointer;
+}
+
+.menu-link,
+.submenu-link {
+    padding: 20px 20px;
+    /* クリック可能範囲を広げる */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* アニメーションの適用 */
+}
+
+.menu-icon {
+    margin-right: 8px;
+}
+
+.menu-text {
+    flex-grow: 1;
+    padding-left: 8px;
+    border-left: 1px solid #D0D0D0;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+}
+
+.submenu li {
+    padding: 0;
+    /* aタグ内にパディングを設定するため */
+    border-top: 1px solid #404D68;
+    border-bottom: 1px solid #404D68;
+}
+
+.submenu li a {
+    padding: 16px 16px 16px 60px;
+    /* クリック可能範囲を広げる */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* アニメーションの適用 */
+}
+
+.submenu li:hover {
+    background-color: #616978;
+    color: #fff;
+    /* ホバーテキスト色 */
+}
+
+.active-menu,
+.active-submenu {
+    background-color: #616978;
+    /* アクティブなメニューおよびサブメニューの背景色 */
+    color: #fff;
+    /* テキスト色を白に */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* アニメーションの適用 */
+}
+
+/* メインコンテンツのスタイル */
+#main-content-wrapper {
+    margin-left: 237px;
+    /* サイドバーの幅分のマージン */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+#header {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#toggle-sidebar {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#breadcrumbs {
+    display: flex;
+    flex-grow: 1;
+    padding-left: 20px;
+}
+#breadcrumbs a {
+    width: fit-content;
+}
+
+#user-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-info:hover {
+    cursor: pointer;
+}
+
+#user-email {
+    font-size: 14px;
+}
+
+#user-info img {
+    width: 10px;
+    padding: 5px 0 0 0;
+    margin: 0 0 0 7px;
+}
+
+#user-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #ABABAB;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+/* メニューのボックスを非表示にするためのスタイル */
+#user-menu {
+    position: absolute;
+    top: 60px;
+    /* ヘッダーの下に配置 */
+    right: 20px;
+    width: 254px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000; /* <thead>より高い値を設定 */
+    /* 初期状態で非表示 */
+}
+
+/* メニューの表示を制御 */
+#user-menu.visible {
+    display: block;
+    /* 表示時にブロック要素として表示 */
+}
+
+#user-menu .info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 14px 56px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+#user-menu .info #user-icon {
+    margin: 0 auto;
+}
+
+#user-menu .info a:hover {
+    font-size: 18px;
+    transition: 0.1s ease-in-out;
+}
+
+.login-now {
+    display: flex;
+    align-items: center;
+    padding: 7px 19px;
+    border-bottom: 1px solid #E1E1E1;
+}
+.login-now #user-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#user-menu button {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    border: none;
+    padding: 12px 19px;
+    text-align: center;
+    align-items: center;
+}
+#user-menu button:hover {
+    background-color: #F3F3F3;
+    cursor: pointer;
+
+}
+.button-icon {
+    margin-right: 8px;
+}
+
+
+
+
+#development {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #666;
+}
+
+/* サイドバーを画面外にスライド */
+body.collapsed #sidebar {
+    transform: translateX(-100%);
+}
+
+body.collapsed #main-content-wrapper {
+    position: relative;
+    margin-left: 0;
+}
+
+/* メディアクエリで幅が1200px以下の場合にサイドバーを収納 */
+@media (max-width: 1200px) {
+    body.smart_collapsed #sidebar {
+        transform: translateX(-100%);
+    }
+
+    body.smart_collapsed #main-content-wrapper {
+        margin-left: 0;
+    }
+
+    body.collapsed #sidebar {
+        transform: translateX(-100%);
+    }
+
+    body.collapsed #main-content-wrapper {
+        margin-left: 0;
+    }
+}

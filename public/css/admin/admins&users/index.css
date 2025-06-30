@@ -1,0 +1,202 @@
+/* メインコンテンツのスタイル */
+#main-content {
+    padding: 30px 50px 0px;
+}
+
+
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.add-product-btn {
+    background-color: #fff;
+    border: 1px solid #4C83EE;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #4C83EE;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 30px;
+    transition: 0.2s ease-in-out;
+    width: 150px;
+    height: 40px;
+}
+.add-product-btn:hover {
+    background-color: #4C83EE;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.add-product-btn:active {
+    background-color: #124BBA;
+}
+
+/* 商品セクションのスタイル */
+.product-section {
+    margin-bottom: 40px;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 10px; */
+    padding: 8px 17px;
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right:50px ;
+    white-space: nowrap;
+}
+
+
+
+.product-controls {
+    width: 1213px;
+    border: 1px solid #7A7A7A;
+    border-radius: 3px;
+}
+
+.product-controls form {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.product-filter {
+    padding: 5px;
+    height: 100%;
+    width: 122px;
+    border: none;
+    font-weight: bold;
+}
+
+/* 商品検索用のテキスト入力フィールドのスタイル */
+.product-search-input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC979;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    height: 100%;
+    width: 80px;
+
+}
+
+/* 商品リストのスタイル */
+.product-list {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 70vh; /* テーブルの最大高さを設定 */
+    /* スクロール可能にする */
+}
+
+.single-product-list {
+    max-height: 70vh;
+    /* 単品商品のリスト高さ */
+}
+
+.set-product-list {
+    max-height: 150px;
+    /* セット商品のリスト高さ */
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    table-layout: fixed; /* テーブルのレイアウトを固定にする */
+}
+
+.product-table thead {
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+    z-index: 1; /* スクロール時にtheadが前面に表示されるように */
+}
+
+
+.product-table th,
+.product-table td {
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word; /* 長い単語も折り返しを行う */
+    white-space: normal; /* テキストを折り返す */
+    min-width: 100px; /* 各セルの最小幅を設定 */
+    max-width: 200px; /* 各セルの最大幅を設定 */
+    overflow: hidden; /* コンテンツがオーバーフローした場合に隠す */
+}
+.product-table tr{
+    height: 62px;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.product-table td:nth-child(7){
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+    height: 62px;
+}
+
+
+.product-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.edit-btn{
+    width: 70px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #4C83EE;
+    color: #4C83EE;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.edit-btn:hover{
+    background-color: #4C83EE;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.edit-btn:active{
+    background-color: #124BBA;
+}
+
+.delete-btn {
+    border: none;
+    background-color: #fff;
+}
+
+.edit-btn {
+    margin-right: 13px;
+}
+
+.delete-btn:hover {
+    opacity: 0.6;
+}
+

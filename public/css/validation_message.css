@@ -1,0 +1,6 @@
+.error-message {
+    color: #e74c3c;
+    /* 赤色にすることでエラーメッセージを強調 */
+    font-size: 0.875em;
+    margin-top: 0.25em;
+}

@@ -1,0 +1,148 @@
+/* メインコンテンツのスタイル */
+#main-content {
+    padding: 30px 50px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* フォームセクションのスタイル */
+.form-section-wrap {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    /* margin: 0 auto; */
+    padding: 60px 25px;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #e0e0e0;
+}
+
+
+.form-group-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+
+.form-group-wrap label {
+    flex: 1;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.form-group-wrap .form-input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea.form-input {
+    height: 100px;
+    resize: none;
+    /* テキストエリアのサイズ調整を無効にする */
+}
+
+/* パスワード入力欄 */
+.password-container {
+    margin-bottom: 30px;
+}
+
+.password-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.password-header label {
+    font-weight: bold;
+    color: #333;
+}
+
+.password-header .forgot-password-link a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 13px;
+}
+
+.password-header .forgot-password-link a:hover {
+    text-decoration: underline;
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.password-input {
+    width: 100%;
+    padding: 0 42px 0 13px;
+    height: 33px;
+    border-radius: 5px;
+    border: 1px solid #E1E1E1;
+    padding-right: 35px;
+    /* アイコンのスペースを確保 */
+    transition: border-color 0.3s ease;
+    /* ボーダー色の変化をスムーズに */
+}
+
+.password-input:focus {
+    border-color: #9B9B9B;
+    /* フォーカス時のボーダー色 */
+}
+
+.password-container a {
+    font-size: 13px;
+    color: #4C83EE;
+}
+
+.password-container p {
+    margin: 10px 0 0 auto;
+}
+
+.toggle-visibility {
+    position: absolute;
+    top: 20%;
+    right: 13px;
+    cursor: pointer;
+}
+
+.toggle-visibility img {
+    width: 20px;
+}
+
+
+
+
+/* 確認ボタンのスタイル */
+.submit-btn {
+    background-color: #F0C808;
+    border: none;
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    /* margin-top: 20px; */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #FFAA00;
+}
+

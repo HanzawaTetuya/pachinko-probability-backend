@@ -1,0 +1,330 @@
+/* メインコンテンツのスタイル */
+#main-content {
+    padding: 30px 50px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    font-size: 15px;
+}
+
+/* 売上エリア */
+.profit-content-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    /* flex-wrap: wrap; */
+    margin-bottom: 40px;
+}
+
+/* 統一プロパティ */
+.profit-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    padding: 10px 16px;
+    min-width: 400px;
+    width: 100%;
+    color: #7B7B7B;
+}
+
+.profit-title {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.profit {
+    display: flex;
+    gap: 35px;
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.profit div {
+    display: flex;
+    align-items: end;
+}
+
+.line {
+    font-size: 30px;
+    font-weight: 100;
+    margin-inline: 6px;
+    margin-top: -5px;
+}
+
+/* 提携先一覧 */
+.partner-companies-wrap {
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    max-width: 1550px;
+}
+
+.p-c-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 8px 26px;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.p-c-title p {
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #7A7A7A;
+    border-radius: 3px;
+    max-width: 1213px;
+    width: 100%;
+}
+
+.search-bar input,
+.search-bar button {
+    border: none;
+    padding: 8px 10px;
+}
+
+.search-bar select {
+    border: none;
+    padding: 11px 14px;
+}
+
+.search-bar button {
+    background-color: #FFC979;
+    cursor: pointer;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    /* 入力欄を広げる */
+}
+
+.search-bar button {
+    flex-grow: 0.1;
+}
+
+.search-bar select {
+    background-color: #F8FAFA;
+    cursor: pointer;
+}
+
+/* フォーカス時のスタイル */
+.search-bar input:focus,
+.search-bar select:focus,
+.search-bar button:focus {
+    outline: none;
+}
+
+/* テーブルのレイアウト */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+thead {
+    background-color: #fff;
+}
+
+tbody {
+    display: block;
+    background-color: #F8FAFA;
+    max-height: 310px;
+    overflow: auto;
+}
+
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    /* テーブルの列幅が一定に保たれるように */
+}
+
+tr {
+    height: 62px;
+}
+
+th {
+    font-weight: bold;
+}
+
+.detail-link button {
+    color: #4C83EE;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+.page-nation {
+    margin: 30px 0 50px;
+    text-align: center;
+}
+
+
+/* 企業情報 */
+.company-info-section-wrap {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    padding: 15px 25px 40px;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #e0e0e0;
+}
+
+.company-info-title {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.company-info-group-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: end;
+}
+
+.company-info-group-wrap .company-info-group:nth-last-child(n+1) {
+    margin-right: 10px;
+}
+
+.company-info-group {
+    width: 48%;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.company-info-group label {
+    flex: 1;
+    font-weight: bold;
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 21px;
+}
+
+.company-info-group p {
+    margin-top: 21px;
+    font-size: 13px;
+    margin-bottom: 12px;
+    margin: 21px 0 12px 16px;
+}
+
+.company-info-group .span {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea.company-info-input {
+    height: 100px;
+    resize: none;
+    /* テキストエリアのサイズ調整を無効にする */
+}
+
+.company-info-group-textarea {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+/* テーブルコンテナ */
+.purchase-info-container {
+    width: 100%;
+    max-width: 465px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.purchase-info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.purchase-info-table thead {
+    background-color: #2b2b2b;
+    color: #fff;
+    text-align: left;
+}
+
+.purchase-info-table th,
+.purchase-info-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.purchase-info-table tbody {
+    max-height: 237px;
+    /* テーブルの高さ制限 */
+    overflow-y: auto;
+    /* 縦スクロール */
+    display: block;
+}
+
+.purchase-info-table tbody tr {
+    background-color: #fff;
+}
+
+.purchase-info-table thead,
+.purchase-info-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.purchase-info-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* ボタンのスタイル */
+.back-btn {
+    background-color: #fff;
+    border: 1px solid #4C83EE;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #4C83EE;
+    cursor: pointer;
+    margin-left: 16px;
+    transition: 0.2s ease-in-out;
+    width: 150px;
+    height: 40px;
+}
+
+.back-btn:hover {
+    background-color: #4C83EE;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.back-btn:active {
+    background-color: #124BBA;
+}
+
+.company-info-btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    border-bottom: none;
+}

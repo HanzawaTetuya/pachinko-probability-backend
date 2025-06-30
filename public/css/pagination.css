@@ -1,0 +1,42 @@
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex; /* ページネーション要素を中央に配置 */
+    justify-content: center;
+    align-items: center;
+    list-style-type: none; /* リストのスタイルを無効化 */
+    padding: 0; /* パディングをリセット */
+    border: 1px solid #ddd; /* アクティブページの枠線を設定 */
+    border-radius: 8px;
+}
+
+.pagination a,
+.pagination span {
+    width: fit-content;
+    height: 42px;
+    padding: 8px 16px; /* テキストの周りにパディングを追加 */
+    text-decoration: none; /* テキストの下線を削除 */
+    color: #000; /* テキストカラーを黒に設定 */
+}
+
+.pagination .nav {
+    min-width: 24px;
+    max-width: 42px;
+}
+
+.pagination .active {
+    width: 100%;
+    border: 1px solid #000; /* アクティブページの枠線を設定 */
+}
+
+.pagination .disabled {
+    color: #ccc; /* 使用不可のリンクのテキストカラーを灰色に設定 */
+    cursor: not-allowed; /* カーソルを禁止マークに設定 */
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0; /* ホバー時の背景色を薄灰色に設定 */
+}
